@@ -70,7 +70,7 @@ header {
 
 header nav {
   display: flex;
-  height: 250px;
+  height: 220px;
   /* background: #5f5f; */
   justify-content: space-between;
   align-items: center;

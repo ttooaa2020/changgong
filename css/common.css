@@ -257,14 +257,22 @@ header nav {
     height: 4.9rem;
   }
 
+  header nav {
+    height: 17rem;
+  }
+
   .foot-logo a {
     width: 7rem;
     height: 7rem;
   }
 
+  .foot-call {
+    padding-top: 4rem;
+  }
+
   .foot-nav {
-    gap: 4rem;
-    overflow-x: auto;
+    gap: 3.5rem;
+    flex-wrap: wrap;
   }
 
   .foot-time {

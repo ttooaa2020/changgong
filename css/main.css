@@ -132,7 +132,7 @@
   font-size: 2rem;
   color: #949494;
 
-  font-size: clamp(1.6rem, 1.042vw, 2rem);
+  font-size: clamp(1.4rem, 1.042vw, 2rem);
 }
 
 .con-all p {
@@ -141,7 +141,7 @@
   color: #333;
   margin-top: 2rem;
 
-  font-size: clamp(1.3rem, 1.25vw, 2.4rem);
+  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
 }
 
 .con-all li a::after {

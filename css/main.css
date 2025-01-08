@@ -263,13 +263,25 @@
 }
 
 .map-wrap {
-  width: 90rem;
+  width: 80rem;
 }
 
 @media (max-width: 1600px) {
   .con-all li a {
     width: 40rem;
     height: 45rem;
+  }
+
+  .map-con {
+    flex-wrap: wrap;
+  }
+
+  .map-wrap {
+    width: 100%;
+  }
+
+  #daumRoughmapContainer1734592229954 {
+    width: 100% !important;
   }
 }
 
@@ -295,13 +307,5 @@
     width: 30rem;
     height: 35rem;
     padding: 4rem;
-  }
-
-  .map-con {
-    flex-wrap: wrap;
-  }
-
-  .map-wrap {
-    width: 100%;
   }
 }

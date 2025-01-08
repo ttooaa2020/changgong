@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --main-color: #086bb6;
+}
+
+::selection {
+  background: #7dc7ff;
+  color: #fff;
+}
+
+html {
+  font-size: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 16px/1.5 Pretendard, sans-serif;
+  color: #000;
+  text-transform: capitalize;
+  word-break: keep-all;
+  overflow-x: hidden;
+
+  min-width: 36rem;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2300a0;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.inner {
+  width: 152rem;
+  margin: 0 auto;
+
+  width: 79.1667%;
+}
+
+header {
+  /* position: fixed; */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  height: 22rem;
+  /* background: #5f5f; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: block;
+  width: 23rem;
+  height: 10rem;
+  background: url(../img/logo.png) no-repeat 100% / contain;
+}
+
+.gnb {
+  display: flex;
+  align-items: center;
+}
+
+.gnb li a {
+  /* border: 1px solid #000; */
+  display: block;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0 8rem 0 0;
+
+  font-size: clamp(1.6rem, 1.042vw, 2rem);
+}
+
+.gnb li:nth-child(4) a {
+  padding: 0;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+}
+
+.submenu li {
+  padding-top: 2rem;
+}
+
+.join-btn {
+  display: flex;
+  gap: 4rem;
+}
+
+.join-btn a {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.join-btn a:nth-child(1) {
+  background: url(../img/search.svg) no-repeat 50% / cover;
+}
+
+.join-btn a:nth-child(2) {
+  background: url(../img/my.svg) no-repeat 50% / cover;
+}
+
+.join-btn a:nth-child(3) {
+  background: url(../img/shopping.svg) no-repeat 40% / contain;
+}
+
+.mo-btn {
+  display: none;
+}
+
+/* footer */
+#footer {
+  padding: 11.8rem 0 11.8rem;
+  background: var(--main-color);
+}
+
+.foot-title {
+  display: flex;
+  align-items: center;
+  gap: 3.3rem;
+}
+
+.foot-logo a {
+  display: block;
+  width: 9.5rem;
+  height: 8.7rem;
+  background: url(../img/foot-logo.png) no-repeat 100% / contain;
+}
+
+.foot-nav {
+  gap: 10rem;
+}
+
+.foot-nav li {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+
+  font-size: clamp(1.5rem, 1.042vw, 2rem);
+}
+
+.foot-nav {
+  display: flex;
+}
+
+.foot-call {
+  display: flex;
+  padding-top: 5rem;
+  gap: 2rem;
+}
+.foot-call dl {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.foot-call dl dt,
+.foot-time dl dt,
+.foot-text dl dt {
+  font-size: clamp(1rem, 0.8333vw, 1.6rem);
+  font-weight: 500;
+  color: #7dc7ff;
+}
+
+.foot-call dl dd,
+.foot-time dl dd {
+  font-size: clamp(1rem, 0.8333vw, 1.6rem);
+  font-weight: 500;
+  color: #fff;
+}
+
+.foot-time {
+  display: flex;
+  padding-top: 2rem;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.foot-time dl {
+  display: flex;
+  gap: 1.5rem;
+  color: #fff;
+}
+
+.foot-text {
+  display: flex;
+  padding-top: 2.5rem;
+  gap: 5.9rem;
+}
+
+.foot-text p {
+  display: flex;
+  align-items: center;
+  color: #7dc7ff;
+  font-size: clamp(1rem, 0.8333vw, 1.6rem);
+}
+
+@media (max-width: 1220px) {
+  .gnb,
+  .join-btn {
+    display: none;
+  }
+
+  .mo-btn a {
+    display: block;
+    width: 4rem;
+    height: 0.9rem;
+    background: url(../img/more-btn.svg);
+  }
+
+  .foot-title {
+    flex-wrap: wrap;
+  }
+
+  .foot-text {
+    gap: 2rem;
+
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo a {
+    width: 10.5rem;
+    height: 4.9rem;
+  }
+
+  header nav {
+    height: 17rem;
+  }
+
+  .foot-logo a {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .foot-call {
+    padding-top: 4rem;
+  }
+
+  .foot-nav {
+    gap: 3.5rem;
+    flex-wrap: wrap;
+  }
+
+  .foot-time {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .inner {
+    width: 90%;
+  }
+}

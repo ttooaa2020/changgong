@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <header id="header">
@@ -54,11 +62,26 @@
 
     <main id="main">
       <section class="visual">
-        <!-- <div class="inner"> -->
-        <a href="">
-          <!-- <figure><img src="./img/visual.jpg" alt="#" /></figure> -->
-        </a>
-        <!-- </div> -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <figure><img src="./img/visual.jpg" alt="#" /></figure>
+            </div>
+
+            <div class="swiper-slide">
+              <figure><img src="./img/visual.jpg" alt="#" /></figure>
+            </div>
+
+            <div class="swiper-slide">
+              <figure><img src="./img/visual.jpg" alt="#" /></figure>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev-1"><i class="hidden">이전</i></div>
+        <div class="swiper-button-next-1"><i class="hidden">다음</i></div>
       </section>
 
       <section class="education">

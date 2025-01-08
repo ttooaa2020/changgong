@@ -136,7 +136,7 @@ header nav {
   background: url(../img/shopping.svg) no-repeat 40% / contain;
 }
 
-.mo-btn {
+.mo-btn a {
   display: none;
 }
 
@@ -233,11 +233,11 @@ header nav {
     display: none;
   }
 
-  .mo-btn {
+  .mo-btn a {
     display: block;
-    width: 4rem;
+    width: 2.5rem;
     height: 0.9rem;
-    background: url(../img/more-btn.svg);
+    background: url(../img/more-btn.svg) no-repeat 100% / contain;
   }
 
   .foot-title {
@@ -258,7 +258,7 @@ header nav {
   }
 
   header nav {
-    height: 17rem;
+    height: 1rem;
   }
 
   .foot-logo a {

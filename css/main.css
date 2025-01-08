@@ -286,6 +286,14 @@
 }
 
 @media (max-width: 950px) {
+  .swiper-button-next-1 {
+    right: 3%;
+  }
+
+  .swiper-button-prev-1 {
+    left: 3%;
+  }
+
   .education-all {
     flex-direction: column;
   }

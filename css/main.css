@@ -263,7 +263,7 @@
 }
 
 .map-wrap {
-  width: 100%;
+  width: 90rem;
 }
 
 @media (max-width: 1600px) {
@@ -299,5 +299,9 @@
 
   .map-con {
     flex-wrap: wrap;
+  }
+
+  .map-wrap {
+    width: 100%;
   }
 }

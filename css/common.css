@@ -150,15 +150,13 @@ header nav {
   display: flex;
   align-items: center;
   gap: 3.3rem;
-
-  flex-wrap: wrap;
 }
 
 .foot-logo a {
   display: block;
   width: 9.5rem;
   height: 8.7rem;
-  background: url(../img/foot-logo.png);
+  background: url(../img/foot-logo.png) no-repeat 100% / contain;
 }
 
 .foot-nav {
@@ -242,6 +240,10 @@ header nav {
     background: url(../img/more-btn.svg);
   }
 
+  .foot-title {
+    flex-wrap: wrap;
+  }
+
   .foot-text {
     gap: 2rem;
 
@@ -255,8 +257,14 @@ header nav {
     height: 4.9rem;
   }
 
+  .foot-logo a {
+    width: 7rem;
+    height: 7rem;
+  }
+
   .foot-nav {
     gap: 4rem;
+    overflow-x: auto;
   }
 
   .foot-time {

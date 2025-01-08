@@ -100,6 +100,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20rem 0 20rem;
+  padding: 13.1579% 0 13.1579%;
   gap: 2rem;
 
   overflow-x: auto;
@@ -195,6 +196,7 @@
   font-size: 2rem;
   font-weight: 400;
   padding: 8rem;
+  padding: 5.2632%;
 
   flex: 1 1 max(29%, 100px);
 

@@ -4,6 +4,8 @@
 
 :root {
   --main-color: #086bb6;
+  --Light-100: #fff;
+  --Darck-60: #666666;
 }
 
 ::selection {
@@ -78,6 +80,12 @@ header nav {
   align-items: center;
 }
 
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo a {
   display: block;
   width: 23rem;
@@ -95,13 +103,13 @@ header nav {
   display: block;
   font-weight: 600;
   font-size: 2rem;
-  padding: 0 8rem 0 0;
+  padding-right: 8rem;
 
   font-size: clamp(1.6rem, 1.042vw, 2rem);
 }
 
 .gnb li:nth-child(4) a {
-  padding: 0;
+  padding-right: 30rem;
 }
 
 .submenu {
@@ -138,6 +146,9 @@ header nav {
 
 .mo-btn a {
   display: none;
+  width: 2.5rem;
+  height: 0.9rem;
+  background: url(../img/more-btn.svg) no-repeat 100% / contain;
 }
 
 /* footer */
@@ -227,6 +238,74 @@ header nav {
   font-size: clamp(1rem, 0.8333vw, 1.6rem);
 }
 
+.btn {
+  position: fixed;
+  display: block;
+  z-index: 100;
+  width: 6rem;
+  height: 6rem;
+  top: 85%;
+  right: 5%;
+  border-radius: 10rem;
+  background: var(--main-color);
+  border: 1.5px solid #fff;
+
+  cursor: pointer;
+}
+
+.swiper-button-prev-1 {
+  position: absolute;
+  top: 50%;
+  left: 6rem;
+
+  background: initial;
+  z-index: 5;
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev-1::after {
+  content: "";
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  background: url(../img/arrow.svg) no-repeat 50% / contain;
+}
+
+.swiper-button-next-1 {
+  position: absolute;
+  top: 50%;
+  right: 6rem;
+
+  background: initial;
+  z-index: 5;
+}
+
+.swiper-button-next-1::after {
+  content: "";
+  display: block;
+  width: 4.2rem;
+  height: 4.2rem;
+  background: url(../img/arrow.svg) no-repeat 50% / contain;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 2% !important;
+  width: 100%;
+  /* background: #f5f5; */
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  z-index: 5;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--main-color);
+}
+
+/*  */
 @media (max-width: 1220px) {
   .gnb,
   .join-btn {
@@ -235,9 +314,6 @@ header nav {
 
   .mo-btn a {
     display: block;
-    width: 2.5rem;
-    height: 0.9rem;
-    background: url(../img/more-btn.svg) no-repeat 100% / contain;
   }
 
   .foot-title {

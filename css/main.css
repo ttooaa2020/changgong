@@ -10,57 +10,16 @@
   height: 100vh;
 }
 
-.swiper-button-prev-1 {
-  position: absolute;
-  top: 50%;
-  left: 6rem;
-
-  background: initial;
-  z-index: 5;
-  transform: rotate(180deg);
-}
-
-.swiper-button-prev-1::after {
+/* .swiper-slide::after {
   content: "";
-  display: block;
-  width: 4.2rem;
-  height: 4.2rem;
-  background: url(../img/arrow.svg) no-repeat 50% / contain;
-}
-
-.swiper-button-next-1 {
   position: absolute;
-  top: 50%;
-  right: 6rem;
-
-  background: initial;
-  z-index: 5;
-}
-
-.swiper-button-next-1::after {
-  content: "";
-  display: block;
-  width: 4.2rem;
-  height: 4.2rem;
-  background: url(../img/arrow.svg) no-repeat 50% / contain;
-}
-
-.swiper-pagination {
-  position: absolute;
-  bottom: 2% !important;
+  top: 0;
+  left: 0;
   width: 100%;
-  /* background: #f5f5; */
-
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-
-  z-index: 5;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--main-color);
-}
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+} */
 
 /* education */
 .education {
@@ -155,6 +114,11 @@
   gap: 2rem;
 
   overflow-x: auto;
+
+  cursor: grab;
+  user-select: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
 }
 
 .con-all li a {

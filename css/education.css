@@ -1,21 +1,209 @@
 @charset "utf-8";
 
-.visual {
-  width: 100%;
-  height: 50vh;
+/* about */
+.about {
+  padding: 26.5rem 0 0;
 
-  background: #aaaaaa;
+  padding: 13.8% 0 0;
 }
 
-.title {
-  padding-top: 100px;
+.about-text {
+  flex: 1 1 max(40%, 300px);
+  /* border: 1px solid #000; */
 }
 
-.title dt {
+.about-con li {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 35rem;
+  align-items: center;
+  gap: 8%;
+
+  padding-bottom: 23.0263%;
+}
+
+.about-con li:nth-child(odd) {
+  flex-direction: row-reverse;
+
+  /* even: 짝수들만 포함 시키는것 */
+}
+
+.about-con dl dt {
+  padding-top: 3rem;
+  font-size: 4rem;
   font-weight: 700;
-  font-size: 30px;
+
+  padding-top: 4.4313%;
+  font-size: clamp(2.2rem, 2.0833vw, 4rem);
 }
 
-.title dd {
-  font-size: 20px;
+.about-con dl dd {
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--Darck-60);
+
+  padding-top: 2.9542%;
+  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
+}
+
+.about-con figure {
+  height: 47rem;
+  border-radius: 4rem;
+  overflow: hidden;
+
+  flex: 1 1 max(40%, 300px);
+}
+
+.about-con figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-con li dl::before {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 6rem;
+}
+
+.about-con li:nth-child(1) dl::before {
+  background: url(../img/about-icon-1.svg) no-repeat 50% / contain;
+
+  width: 19.4978%;
+}
+.about-con li:nth-child(2) dl::before {
+  background: url(../img/about-icon-2.svg) no-repeat 50% / contain;
+
+  width: 11.0783%;
+}
+.about-con li:nth-child(3) dl::before {
+  background: url(../img/about-icon-3.svg) no-repeat 50% / contain;
+
+  width: 13.2939%;
+}
+
+.service {
+  position: relative;
+  padding: 8.4rem 0;
+  padding: 4.375% 0;
+  background: #000;
+  /* background: url(../img/visual.jpg) no-repeat 50% / cover; */
+}
+
+.sev-con {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.service-btn {
+  width: 15.1rem;
+
+  height: 15.1rem;
+  border-radius: 100%;
+
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-size: clamp(1.5rem, 1.6901vw, 2.4rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sev-con dl {
+  color: #fff;
+  gap: 0.9rem;
+}
+
+.sev-con dl dt {
+  font-weight: 400;
+  font-size: 2.4rem;
+  font-size: clamp(1.3rem, 1.6901vw, 2.4rem);
+}
+
+.sev-con dl dd {
+  font-weight: 700;
+  font-size: 4.9rem;
+  font-size: clamp(2.1rem, 3.4507vw, 4.9rem);
+}
+/* 고객센터 */
+
+/* curriculum */
+
+h3 {
+  padding-bottom: 5rem;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--main-color3);
+  text-align: center;
+  font-size: clamp(2.5rem, 2.0833vw, 4rem);
+}
+
+.swiper {
+  height: 30rem;
+}
+
+.curriculum {
+  padding: 22.7rem 0 21.3rem;
+  position: relative;
+}
+
+.curriculum-con {
+  justify-content: space-between;
+}
+
+.curriculum-wrapper {
+  padding-top: 9.9rem;
+}
+
+/* keyword 섹션 스타일 */
+.keyword {
+  padding: 22.7rem 0 21.3rem;
+  position: relative;
+}
+
+.keyword h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--main-color3);
+  text-align: center;
+  font-size: clamp(2.5rem, 2.0833vw, 4rem);
+}
+
+.keyword-con {
+  justify-content: space-between;
+}
+
+.keyword-wrapper {
+  padding-top: 9.9rem;
+}
+
+/* 공통 스타일 */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-slide dl {
+  padding-top: 1.5rem;
+}
+
+.swiper-slide dl dt {
+  font-size: 3rem;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 1.5625vw, 3rem);
+}
+
+.swiper-slide dl dd {
+  padding-top: 1.2rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 0.8854vw, 1.7rem);
 }

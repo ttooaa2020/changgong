@@ -6,7 +6,16 @@
     <title>창공연구소</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sub-common.css" />
     <link rel="stylesheet" href="./css/education.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <header id="header">
@@ -16,33 +25,34 @@
             <a href="./index.html"><i class="hidden">창공연구소</i></a>
           </h1>
 
-          <ul class="gnb">
-            <li><a href="./about.html">ABOUT</a></li>
-
-            <li>
-              <a href="./education.html">EDUCATION</a>
-              <ul class="submenu">
-                <li><a href="">DESIGN</a></li>
-                <li><a href="">MARKETING</a></li>
-                <li><a href="">ANALYTICS</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="">쇼츠</a>
-              <ul class="submenu">
-                <li><a href="">유튜브쇼핑</a></li>
-                <li><a href="">클래스</a></li>
-              </ul>
-            </li>
-
-            <li><a href="">디자인 확인</a></li>
-          </ul>
-
-          <div class="join-btn">
-            <a href="#"><i class="hidden">검색</i></a>
-            <a href="#"><i class="hidden">로그인</i></a>
-            <a href="#"><i class="hidden">쇼핑</i></a>
+          <div class="nav-con">
+            <ul class="gnb">
+              <li><a href="./about.html">ABOUT</a></li>
+              <li>
+                <a href="./education.html">EDUCATION</a>
+                <ul class="submenu">
+                  <li><a href="">DESIGN</a></li>
+                  <li><a href="">MARKETING</a></li>
+                  <li><a href="">ANALYTICS</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">쇼츠</a>
+                <ul class="submenu">
+                  <li><a href="">유튜브쇼핑</a></li>
+                  <li><a href="">클래스</a></li>
+                </ul>
+              </li>
+              <li><a href="">디자인 확인</a></li>
+            </ul>
+            <div class="join-btn">
+              <a href="#"><i class="hidden">검색</i></a>
+              <a href="#"><i class="hidden">로그인</i></a>
+              <a href="#"><i class="hidden">쇼핑</i></a>
+            </div>
+            <div class="mo-btn">
+              <a href=""><i class="hidden">더보기</i></a>
+            </div>
           </div>
         </nav>
       </div>
@@ -50,17 +60,262 @@
 
     <main id="main">
       <section class="visual">
+        <div class="visual-text">
+          <h2>EDUCATION</h2>
+          <p>
+            온라인 쇼핑몰을 처음 하시는 분들부터 실제 CEO의 노하우를 통해 방향을
+            잡아드리며, 많은 수강생과 다양한 프로젝트를 진행하여 창공연구소와
+            함께 이커머스 성공의 파트너가 될 수 있습니다.
+          </p>
+        </div>
+        <figure><img src="./img/visual-3-1.jpg" alt="#" /></figure>
+      </section>
+
+      <section class="about">
         <div class="inner">
-          <dl class="title">
-            <dt>EDUCATION</dt>
-            <dd>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              ab assumenda doloribus omnis beatae earum porro dolorem tempore
-              nam sequi sint quidem minus recusandae unde accusantium maxime
-              eaque, aliquid iste odio atque pariatur ipsum cupiditate maiores.
-              Dolorem consectetur fugiat quam?
-            </dd>
-          </dl>
+          <ul class="about-con">
+            <li>
+              <dl class="about-text">
+                <dt>노하우 전달</dt>
+                <dd>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore facilis nesciunt officiis aliquid hic fugiat magnam,
+                  repudiandae incidunt obcaecati! Totam.
+                </dd>
+              </dl>
+              <figure>
+                <img src="./img/about-1.jpg" alt="#" />
+              </figure>
+            </li>
+            <li>
+              <dl class="about-text">
+                <dt>맞춤 마케팅</dt>
+                <dd>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore facilis nesciunt officiis aliquid hic fugiat magnam,
+                  repudiandae incidunt obcaecati! Totam.
+                </dd>
+              </dl>
+              <figure>
+                <img src="./img/about-2.jpg" alt="#" />
+              </figure>
+            </li>
+            <li>
+              <dl class="about-text">
+                <dt>온라인 시장 공략</dt>
+                <dd>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore facilis nesciunt officiis aliquid hic fugiat magnam,
+                  repudiandae incidunt obcaecati! Totam.
+                </dd>
+              </dl>
+              <figure>
+                <img src="./img/about-3.jpg" alt="#" />
+              </figure>
+            </li>
+            <li>
+              <dl class="about-text">
+                <dt>체계적인 수강</dt>
+                <dd>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore facilis nesciunt officiis aliquid hic fugiat magnam,
+                  repudiandae incidunt obcaecati! Totam.
+                </dd>
+              </dl>
+              <figure>
+                <img src="./img/about-4.jpg" alt="#" />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="inner">
+          <div class="sev-con">
+            <a href="#" class="service-btn">수강신청 하기</a>
+            <dl>
+              <dt>무엇이든 편하게 문의하세요.</dt>
+              <dd>창공연구소</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="curriculum">
+        <div class="inner">
+          <h3>커리큘럼</h3>
+
+          <div class="curriculum-wrapper">
+            <div class="swiper curriculum-swiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                  <dl>
+                    <dt>카페24, 스마트스토어, 메타버스, 빅데이터분석</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia, totam!
+                    </dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide">
+                  <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                  <dl>
+                    <dt>온라인 마케팅</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia, totam!
+                    </dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide">
+                  <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                  <dl>
+                    <dt>브랜딩, 성공사례</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia, totam!
+                    </dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide">
+                  <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                  <dl>
+                    <dt>모바일 최적화 쇼핑몰</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia, totam!
+                    </dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide">
+                  <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                  <dl>
+                    <dt>이커머스 운영전략, 빅데이터 분석, 로그 분석</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia, totam!
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="curriculum-pagination swiper-pagination"></div>
+
+              <div class="curriculum-button-prev swiper-button-prev-1">
+                <i class="hidden">이전</i>
+              </div>
+              <div class="curriculum-button-next swiper-button-next-1">
+                <i class="hidden">다음</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="introduction">
+        <div class="inner">
+          <h3>창공연구소 강사진</h3>
+          <p>
+            창공연구소와 강사진은 100% 실제 운영중인 전문가들로 구성되어
+            있습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="keyword">
+        <div class="keyword-wrapper">
+          <div class="swiper keyword-swiper">
+            <div class="swiper-wrapper keyword-con">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                <dl>
+                  <dt>카페24, 스마트스토어, 메타버스, 빅데이터분석</dt>
+                  <dd>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia, totam!
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide">
+                <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                <dl>
+                  <dt>온라인 마케팅</dt>
+                  <dd>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia, totam!
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide">
+                <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                <dl>
+                  <dt>브랜딩, 성공사례</dt>
+                  <dd>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia, totam!
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide">
+                <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                <dl>
+                  <dt>모바일 최적화 쇼핑몰</dt>
+                  <dd>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia, totam!
+                  </dd>
+                </dl>
+              </div>
+              <div class="swiper-slide">
+                <figure><img src="./img/curriculum-1.png" alt="#" /></figure>
+                <dl>
+                  <dt>이커머스 운영전략, 빅데이터 분석, 로그 분석</dt>
+                  <dd>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia, totam!
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="keyword-pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="introduction-2"></section>
+
+      <section class="lecture">
+        <div class="inner">
+          <div class="new">
+            <h3>현재 모집중인 과정</h3>
+            <iframe
+              src="https://airtable.com/embed/shrEHdun5EvyOwsdy?backgroundColor=blue"
+              frameborder="0"
+              onmousewheel=""
+              width="98%"
+              height="600"
+              style="background: transparent; border: 0"
+              class="airtable-embed"
+            ></iframe>
+          </div>
+
+          <div class="old">
+            <h3>최근 개설 과정</h3>
+            <iframe
+              src="https://airtable.com/embed/shr3t6mJcz9og4JEx?backgroundColor=blue"
+              frameborder="0"
+              onmousewheel=""
+              width="98%"
+              height="600"
+              style="background: transparent; border: 0"
+              class="airtable-embed"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -91,10 +346,6 @@
                   <dt>상담 이메일</dt>
                   <dd>cg-lab@naver.com</dd>
                 </dl>
-                <dl>
-                  <dt>상담채널</dt>
-                  <dd>우측하단</dd>
-                </dl>
               </div>
 
               <div class="foot-time">
@@ -115,30 +366,10 @@
               </div>
 
               <div class="foot-text">
-                <dl>
-                  <dt>상호명</dt>
-                  <dd>창공연구소</dd>
-                </dl>
-                <dl>
-                  <dt>대표자명</dt>
-                  <dd>정종실</dd>
-                </dl>
-                <dl>
-                  <dt>사업장 주소</dt>
-                  <dd>04563 서울시 중구 장충단로13길 20 11층 D37</dd>
-                </dl>
-                <dl>
-                  <dt>대표 전화</dt>
-                  <dd>0507-1366-4441 사업자 등록번호 202-44-65938</dd>
-                </dl>
-                <dl>
-                  <dt>통신판매업 신고번호</dt>
-                  <dd>2024-서울중구-0413 [사업자정보확인]</dd>
-                </dl>
-                <dl>
-                  <dt>개인정보보호책임자</dt>
-                  <dd>정종실</dd>
-                </dl>
+                <p>대표자 : 정종실</p>
+                <p>주소 : 서울시 중구 장충단로13길 20 11층 D37</p>
+                <p>사업자 등록번호 : 202-44-65938</p>
+                <p>통신판매업 신고번호 : 2024-서울중구-0413</p>
               </div>
             </address>
           </div>

@@ -5,7 +5,12 @@
 :root {
   --main-color: #086bb6;
   --Light-100: #fff;
+
+  --color-black: #000;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #a8a8a8;
   --Dark-60: #666666;
+  --color-foot: #7dc7ff;
 
   --font-xxxl: clamp(4rem, 2.6041vw, 5rem);
   --font-xxl: clamp(2.5rem, 2.0833vw, 4rem);
@@ -20,21 +25,11 @@
   --font-semibold: 600;
   --font-bold: 700;
   --font-extrabold: 800;
-
-  --color-black: #000;
-  --color-white: #fff;
-  --color-gray-100: #f5f5f5;
-  --color-gray-200: #a8a8a8;
-  --color-gray-300: #7d7d7d;
-  --color-gray-400: #666666;
-  --color-gray-500: #333333;
-  --color-blue-light: #7dc7ff;
-  --color-blue-dark: #0e005c;
 }
 
 ::selection {
-  background: #7dc7ff;
-  color: #fff;
+  background: var(--color-foot);
+  color: var(--Light-100);
 }
 
 html {
@@ -51,7 +46,7 @@ body {
   overflow-x: hidden;
 
   min-width: 36rem;
-  background: var(--color-white);
+  background: var(--Light-100);
 }
 
 a {
@@ -112,9 +107,9 @@ header nav {
 
 .logo a {
   display: block;
-  width: 23rem;
-  height: 10rem;
-  background: url(../img/logo.png) no-repeat 100% / contain;
+  width: 22rem;
+  height: 9rem;
+  background: url(../img/logo.png) no-repeat 100% / cover;
 }
 
 .gnb {
@@ -125,22 +120,10 @@ header nav {
 .gnb li a {
   /* border: 1px solid #000; */
   display: block;
+  justify-content: space-between;
   font-weight: var(--font-semibold);
   font-size: var(--font-md);
   padding-right: 8rem;
-}
-
-.gnb li:nth-child(4) a {
-  padding-right: 30rem;
-}
-
-.submenu {
-  position: absolute;
-  /* display: none; */
-}
-
-.submenu li {
-  padding-top: 2rem;
 }
 
 .join-btn {
@@ -176,7 +159,7 @@ header nav {
 /* footer */
 #footer {
   padding: 11.8rem 0 11.8rem;
-  margin-top: 30rem;
+  margin-top: 20rem;
   background: var(--main-color);
 }
 
@@ -200,7 +183,7 @@ header nav {
 .foot-nav li {
   font-size: var(--font-md);
   font-weight: var(--font-bold);
-  color: var(--color-white);
+  color: var(--Light-100);
 }
 
 .foot-nav {
@@ -223,14 +206,14 @@ header nav {
 .foot-text dl dt {
   font-size: var(--font-xs);
   font-weight: var(--font-medium);
-  color: var(--color-blue-light);
+  color: var(--color-foot);
 }
 
 .foot-call dl dd,
 .foot-time dl dd {
   font-size: var(--font-xs);
   font-weight: var(--font-medium);
-  color: var(--color-white);
+  color: var(--Light-100);
 }
 
 .foot-time {
@@ -255,7 +238,7 @@ header nav {
 .foot-text p {
   display: flex;
   align-items: center;
-  color: var(--color-blue-light);
+  color: var(--color-foot);
   font-size: var(--font-xs);
 }
 
@@ -263,8 +246,8 @@ header nav {
   position: fixed;
   display: block;
   z-index: 100;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   top: 85%;
   right: 5%;
   border-radius: 10rem;

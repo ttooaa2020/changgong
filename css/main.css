@@ -75,7 +75,7 @@
   font-size: var(--font-sm);
   font-weight: var(--font-extrabold);
   font-size: var(--font-sm);
-  color: var(--color-white);
+  color: var(--Light-100);
   background: var(--main-color);
 
   width: 40.9999%;
@@ -90,7 +90,7 @@
 }
 
 .more:hover {
-  color: var(--color-white);
+  color: var(--Light-100);
   background: var(--color-blue-dark);
 }
 
@@ -124,7 +124,7 @@
   width: 49.3rem;
   height: 58.5rem;
 
-  background: var(--color-white);
+  background: var(--Light-100);
   padding: 5rem;
   border-radius: 3rem;
 }

@@ -55,6 +55,7 @@
 
 h3 {
   padding-bottom: 5rem;
+  padding-bottom: 3.2895%;
   font-weight: var(--font-extrabold);
   font-size: var(--font-xxl);
   color: var(--main-color);
@@ -72,8 +73,6 @@ h3 {
 
   font-size: var(--font-xxl);
   font-weight: var(--font-extrabold);
-
-  color: var(--main-darck);
 }
 
 .intro p {
@@ -128,4 +127,11 @@ h3 {
 }
 .intor-list li:nth-child(3):before {
   background-image: url(../img/intro-icon-3.svg);
+}
+
+.intor-list li:nth-child(4):before {
+  background-image: url(../img/intro-icon-1.svg);
+}
+.intor-list li:nth-child(5):before {
+  background-image: url(../img/intro-icon-2.svg);
 }

@@ -24,8 +24,6 @@
 
 .about-con li:nth-child(odd) {
   flex-direction: row-reverse;
-
-  /* even: 짝수들만 포함 시키는것 */
 }
 
 .about-con dl dt {
@@ -64,24 +62,17 @@
 
 .about-con li:nth-child(1) dl::before {
   background: url(../img/about-icon-1.svg) no-repeat 50% / contain;
-
-  width: 19.4978%;
 }
+
 .about-con li:nth-child(2) dl::before {
   background: url(../img/about-icon-2.svg) no-repeat 50% / contain;
-
-  width: 11.0783%;
 }
 .about-con li:nth-child(3) dl::before {
   background: url(../img/about-icon-3.svg) no-repeat 50% / contain;
-
-  width: 13.2939%;
 }
 
 .about-con li:nth-child(4) dl::before {
   background: url(../img/about-icon-4.svg) no-repeat 50% / contain;
-
-  width: 13.2939%;
 }
 
 .service {
@@ -89,7 +80,7 @@
   padding: 8.4rem 0;
   padding: 4.375% 0;
   /* background: #000; */
-  background: url(../img/about-1.jpg) no-repeat 50% / cover;
+  background: url(../img/about-4.jpg) no-repeat 50% / cover;
 }
 
 .sev-con {
@@ -211,5 +202,5 @@
 }
 
 .new {
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 }

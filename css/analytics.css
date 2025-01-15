@@ -55,3 +55,16 @@
   background: var(--Light-100) url(../img/check.svg) no-repeat center / 60%;
   border-radius: 100%;
 }
+
+.app {
+  margin-top: 20rem;
+}
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-list dl {
+  display: flex;
+}

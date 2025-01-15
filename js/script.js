@@ -10,7 +10,7 @@ $(function () {
 
     pagination: {
       el: ".swiper-pagination",
-      clickable: true, // 페이지네이션 클릭이 되도록 만드는것
+      clickable: true,
     },
 
     // Navigation arrows
@@ -24,12 +24,14 @@ $(function () {
     // Optional parameters
     slidesPerView: 3, // 보여질 슬라이드 갯수
     loop: true,
+    autoplay: true,
     speed: 1000, //기본값 300 = 0.3초
     spaceBetween: 70,
 
     // If we need pagination
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
 
     // Navigation arrows
@@ -50,6 +52,7 @@ $(function () {
     // If we need pagination
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
 
     // Navigation arrows
@@ -94,7 +97,6 @@ $(function () {
 
     autoplay: {
       delay: 0,
- 
     },
   });
 

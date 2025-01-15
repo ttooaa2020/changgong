@@ -182,25 +182,6 @@
   font-size: var(--font-xs);
 }
 
-.introduction h3 {
-  padding-bottom: 1rem;
-}
-
-.introduction p {
-  font-size: var(--font-md);
-  font-weight: var(--font-medium);
-}
-
-.introduction {
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  background: url(../img/about-3.jpg) no-repeat 100% / cover;
-  padding: 2rem 0 2rem 0;
-  height: 50rem;
-}
-
 .new {
   margin-bottom: 10rem;
 }

@@ -2,9 +2,12 @@
 
 /* about */
 .about {
-  padding: 26.5rem 0 0;
+  padding-top: 15rem;
+  padding-top: 7.6844%;
+}
 
-  padding: 13.8% 0 0;
+.about h3 {
+  padding-bottom: 6rem;
 }
 
 .about-text {
@@ -15,11 +18,15 @@
 .about-con li {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 35rem;
+  padding-bottom: 30rem;
   align-items: center;
   gap: 8%;
 
-  padding-bottom: 23.0263%;
+  padding-bottom: 19.7368%;
+}
+
+.about-con li:nth-child(4) {
+  padding-bottom: 0;
 }
 
 .about-con li:nth-child(odd) {
@@ -105,6 +112,11 @@
   justify-content: center;
 }
 
+.service-btn:hover {
+  color: var(--Light-100);
+  background: var(--color-foot);
+}
+
 .sev-con dl {
   color: #fff;
   gap: 0.9rem;
@@ -121,28 +133,12 @@
 }
 /* 고객센터 */
 
-/* curriculum */
-
 .swiper {
   height: 30rem;
 }
 
-.curriculum {
-  padding: 22.7rem 0 21.3rem;
-  position: relative;
-}
-
-.curriculum-con {
-  justify-content: space-between;
-}
-
-.curriculum-wrapper {
-  padding-top: 9.9rem;
-}
-
-/* keyword 섹션 스타일 */
 .keyword {
-  padding: 22.7rem 0 21.3rem;
+  padding: 22.7rem 0 0;
   position: relative;
 }
 
@@ -151,6 +147,20 @@
 }
 
 .keyword-wrapper {
+  padding-top: 9.9rem;
+}
+
+/* curriculum 섹션 스타일 */
+.curriculum {
+  padding: 15rem 0 20rem;
+  position: relative;
+}
+
+.curriculum-con {
+  justify-content: space-between;
+}
+
+.curriculum-wrapper {
   padding-top: 9.9rem;
 }
 
@@ -182,6 +192,11 @@
   font-size: var(--font-xs);
 }
 
-.new {
+.new,
+.old {
   margin-bottom: 10rem;
+}
+
+#footer {
+  margin-top: 0;
 }

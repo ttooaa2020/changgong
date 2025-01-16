@@ -5,6 +5,11 @@ $(function () {
     autoplay: true, //자동으로 슬라이드 적용
     speed: 3000, //기본값 300 = 0.3초
 
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
     // 캐러셀 만들기
     slidesPerView: 1, // 보여질 슬라이드 갯수
 
@@ -20,7 +25,7 @@ $(function () {
     },
   });
 
-  const swiper = new Swiper(".curriculum-swiper", {
+  const swiper = new Swiper(".keyword-swiper", {
     // Optional parameters
     slidesPerView: 3, // 보여질 슬라이드 갯수
     loop: true,
@@ -41,7 +46,7 @@ $(function () {
     },
   });
 
-  const curriculumSwiper = new Swiper(".keyword-swiper", {
+  const curriculumSwiper = new Swiper(".curriculum-swiper", {
     // Optional parameters
     loop: true,
     slidesPerView: 4, // 보여질 슬라이드 갯수
@@ -53,12 +58,6 @@ $(function () {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next-1",
-      prevEl: ".swiper-button-prev-1",
     },
   });
 

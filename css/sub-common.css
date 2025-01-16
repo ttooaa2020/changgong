@@ -11,27 +11,30 @@
   height: 100%;
 }
 
-.visual-text {
+.visual-text h2,
+.visual-text p {
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   color: var(--Light-100);
   text-align: center;
+
+  transform: translate(-50%, -50%);
 
   z-index: 1;
 }
 
-.visual-text h2 {
-  font-weight: var(--font-bold);
+.visual h2 {
+  top: 45%;
+  left: 50%;
 
+  font-weight: var(--font-bold);
   font-size: var(--font-xxxl);
 }
 
-.visual-text p {
-  font-weight: var(--font-regular);
+.visual p {
+  top: 59%;
+  left: 50%;
 
+  font-weight: var(--font-regular);
   font-size: var(--font-sm);
 }
 

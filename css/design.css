@@ -56,20 +56,23 @@
 /* portfolio e */
 
 /* price s */
-
 .price {
-  padding: 5rem 0 5rem;
+  padding: 10rem 0 10rem;
   background: var(--color-gray-100);
 }
 .price-all {
   display: flex;
   text-align: center;
   gap: 5rem;
-  padding-top: 10rem;
+  padding-top: 6rem;
 }
 
 .price-title h3 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.price-title p {
+  font-size: var(--font-md);
 }
 
 .price-card-title {

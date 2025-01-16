@@ -41,6 +41,11 @@
   background: url(../img/more-con.svg) no-repeat 50%;
 }
 
+.c-more-btn:hover {
+  color: var(--Light-100);
+  background: var(--color-foot);
+}
+
 .question {
   padding-top: 15rem;
 }
@@ -91,6 +96,11 @@
   transition: 0.4s;
 
   width: 3.0172%;
+}
+
+.question-list p {
+  padding-top: 0.5rem;
+  color: var(--Light-100);
 }
 
 .answer-wrap {

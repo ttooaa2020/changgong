@@ -10,17 +10,6 @@
   height: 100vh;
 }
 
-/* .swiper-slide::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-} */
-
 /* education */
 .education {
   margin: 30rem 0 30rem;
@@ -91,7 +80,7 @@
 
 .more:hover {
   color: var(--Light-100);
-  background: var(--color-blue-dark);
+  background: var(--color-foot);
 }
 
 /* contents */
@@ -170,14 +159,6 @@
 
 .con-all li:nth-child(3) a::after {
   background: url(../img/con-all-3.svg) no-repeat 50% / contain;
-}
-
-.con-all li:nth-child(3) dd {
-  color: var(--color-gray-500);
-  margin-top: 2rem;
-
-  font-weight: var(--font-semibold);
-  font-size: var(sm);
 }
 
 /* map */

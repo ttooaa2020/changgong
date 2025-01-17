@@ -52,7 +52,7 @@ $(function () {
     slidesPerView: 4, // 보여질 슬라이드 갯수
     autoplay: true, //자동으로 슬라이드 적용
     speed: 2000, //기본값 300 = 0.3초
-    spaceBetween: 40,
+    spaceBetween: 60,
 
     // If we need pagination
     pagination: {

@@ -184,6 +184,14 @@
   object-fit: contain;
 }
 
+.keyword .swiper-button-prev-1 {
+  top: 70%;
+}
+
+.keyword .swiper-button-next-1 {
+  top: 70%;
+}
+
 .swiper-pagination {
   bottom: 3rem !important;
 }

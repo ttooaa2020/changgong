@@ -14,9 +14,8 @@
 }
 /* about */
 .about {
-  padding: 26.5rem 0 0;
-
-  padding: 13.8% 0 0;
+  padding-top: 15rem;
+  padding-top: 7.6844%;
 }
 
 .about-text {
@@ -120,7 +119,7 @@
 }
 
 #daumRoughmapContainer1734592229954 {
-  width: 80rem;
+  width: 80rem !important;
 }
 
 @media (max-width: 1600px) {

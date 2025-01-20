@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 /* about */
-.about {
-  padding-top: 15rem;
-  padding-top: 7.6844%;
-}
 
 .about h3 {
   padding-bottom: 6rem;
@@ -43,7 +39,7 @@
   padding-top: 2rem;
   font-weight: var(--font-regular);
   font-size: var(--font-sm);
-  color: var(--Dark-60);
+  color: var(--dark-60);
 }
 
 .about-con figure {
@@ -81,57 +77,6 @@
 .about-con li:nth-child(4) dl::before {
   background: url(../img/about-icon-4.svg) no-repeat 50% / contain;
 }
-
-.service {
-  position: relative;
-  padding: 8.4rem 0;
-  padding: 4.375% 0;
-  /* background: #000; */
-  background: url(../img/about-4.jpg) no-repeat 50% / cover;
-}
-
-.sev-con {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.service-btn {
-  width: 15.1rem;
-
-  height: 15.1rem;
-  border-radius: 100%;
-
-  background: var(--main-color);
-  color: #fff;
-  font-weight: var(--font-bold);
-  font-size: var(--font-sm);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-btn:hover {
-  color: var(--Light-100);
-  background: var(--color-foot);
-}
-
-.sev-con dl {
-  color: #fff;
-  gap: 0.9rem;
-}
-
-.sev-con dl dt {
-  font-weight: var(--font-regular);
-  font-size: var(--font-sm);
-}
-
-.sev-con dl dd {
-  font-weight: var(--font-bold);
-  font-size: var(--font-lg);
-}
-/* 고객센터 */
 
 .swiper {
   height: 30rem;
@@ -211,10 +156,56 @@
   font-size: var(--font-xs);
 }
 
-.new,
-.old {
-  margin-bottom: 10rem;
+.service {
+  position: relative;
+  padding: 8.4rem 0;
+  padding: 4.375% 0;
+  /* background: #000; */
+  background: url(../img/about-4.jpg) no-repeat 50% / cover;
 }
+
+.sev-con {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.service-btn {
+  width: 15.1rem;
+
+  height: 15.1rem;
+  border-radius: 100%;
+
+  background: var(--main-color);
+  color: #fff;
+  font-weight: var(--font-bold);
+  font-size: var(--font-sm);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-btn:hover {
+  color: var(--light-100);
+  background: var(--main-color2);
+}
+
+.sev-con dl {
+  color: #fff;
+  gap: 0.9rem;
+}
+
+.sev-con dl dt {
+  font-weight: var(--font-regular);
+  font-size: var(--font-sm);
+}
+
+.sev-con dl dd {
+  font-weight: var(--font-bold);
+  font-size: var(--font-lg);
+}
+/* 고객센터 */
 
 #footer {
   margin-top: 0;

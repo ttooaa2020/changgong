@@ -16,22 +16,23 @@
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
   </head>
-  <body>
-    <!-- 모바일용 메뉴 -->
-    <div class="mobile-menu">
-      <ul class="mobile-gnb">
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="./education.html">EDUCATION</a></li>
-        <li><a href="./design.html">DESIGN</a></li>
-        <li><a href="./marketing.html">MARKETING</a></li>
-        <li><a href="./analytics.html">ANALYTICS</a></li>
-      </ul>
-      <button class="mobile-btn-close"><i class="hidden">닫기</i></button>
-    </div>
-    <!-- 모바일용 메뉴 end -->
 
+  <body>
     <header id="header">
+      <!-- 모바일용 메뉴 -->
+      <div class="mobile-menu">
+        <ul class="mobile-gnb">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./education.html">EDUCATION</a></li>
+          <li><a href="./design.html">DESIGN</a></li>
+          <li><a href="./marketing.html">MARKETING</a></li>
+          <li><a href="./analytics.html">ANALYTICS</a></li>
+        </ul>
+        <button class="mobile-btn-close"><i class="hidden">닫기</i></button>
+      </div>
+      <!-- 모바일용 메뉴 end -->
+
       <div class="inner">
         <nav>
           <h1 class="logo">
@@ -64,13 +65,73 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <a href="./education.html">
-                <figure><img src="./img/visual.jpg" alt="#" /></figure>
+                <picture
+                  ><source
+                    media="(max-width: 720px)"
+                    srcset="
+                      //ecimg.cafe24img.com/pg270b59889532028/cglab7/web/upload/category/editor/2023/04/20/cglab-1-edu-m.jpg
+                    "
+                  />
+                  <img
+                    src="https://file.cafe24cos.com/banner-admin-live/upload/cglab7/80a8b9fd-919b-48e7-938d-c44b22aa60f4.jpeg"
+                    style="width: 100%"
+                  />
+                  &nbsp;</picture
+                >
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="./marketing.html">
+                <picture
+                  ><source
+                    media="(max-width: 720px)"
+                    srcset="
+                      //ecimg.cafe24img.com/pg270b59889532028/cglab7/web/upload/category/editor/2023/04/20/cglab-3-marketing-m.jpg
+                    "
+                  />
+                  <img
+                    src="https://file.cafe24cos.com/banner-admin-live/upload/cglab7/b5942602-17a2-4794-b6cc-5112114c5d68.jpeg"
+                    style="width: 100%"
+                  />
+                  &nbsp;</picture
+                >
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="./analytics.html">
+                <picture
+                  ><source
+                    media="(max-width: 720px)"
+                    srcset="
+                      //ecimg.cafe24img.com/pg270b59889532028/cglab7/web/upload/category/editor/2023/04/20/0505.jpg
+                    "
+                  />
+                  <img
+                    src="//ecimg.cafe24img.com/pg270b59889532028/cglab7/web/upload/category/editor/2023/04/20/05056.jpg"
+                    style="width: 100%"
+                  />
+                  &nbsp;</picture
+                >
               </a>
             </div>
 
             <div class="swiper-slide">
               <a href="./design.html">
-                <figure><img src="./img/visual-1.jpg" alt="#" /></figure>
+                <picture
+                  ><source
+                    media="(max-width: 720px)"
+                    srcset="
+                      //ecimg.cafe24img.com/pg270b59889532028/cglab7/web/upload/category/editor/2023/04/20/cglab-2-design-m.jpg
+                    "
+                  />
+                  <img
+                    src="https://file.cafe24cos.com/banner-admin-live/upload/cglab7/8ce1652b-c863-4eb0-99fc-7998a5c4f4e9.jpeg"
+                    style="width: 100%"
+                  />
+                  &nbsp;</picture
+                >
               </a>
             </div>
           </div>
@@ -146,17 +207,9 @@
     <footer id="footer">
       <div class="inner">
         <div class="footer-con">
-          <div class="foot-title">
-            <h4 class="foot-logo">
-              <a href="index.html"><i class="hidden">창공연구소</i></a>
-            </h4>
-            <ul class="foot-nav">
-              <li><a href="./about.html">회사 소개</a></li>
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">이용 안내</a></li>
-            </ul>
-          </div>
+          <h4 class="foot-logo">
+            <a href="index.html"><i class="hidden">창공연구소</i></a>
+          </h4>
 
           <div class="foot-con">
             <address>

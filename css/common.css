@@ -4,12 +4,12 @@
 
 :root {
   --main-color: #086bb6;
-  --Light-100: #fff;
+  --main-color2: #7dc7ff;
+  --light-100: #fff;
   --color-black: #000;
   --color-gray-100: #f5f5f5;
   --color-gray-200: #a8a8a8;
-  --Dark-60: #666666;
-  --color-foot: #7dc7ff;
+  --dark-60: #666666;
 
   --font-xxxl: clamp(4rem, 2.6041vw, 5rem);
   --font-xxl: clamp(2.5rem, 2.0833vw, 4rem);
@@ -27,8 +27,8 @@
 }
 
 ::selection {
-  background: var(--color-foot);
-  color: var(--Light-100);
+  background: var(--main-color2);
+  color: var(--light-100);
 }
 
 html {
@@ -45,7 +45,7 @@ body {
   overflow-x: hidden;
 
   min-width: 36rem;
-  background: var(--Light-100);
+  background: var(--light-100);
 }
 
 a {
@@ -81,20 +81,22 @@ img {
   width: 79.1667%;
 }
 
+section {
+  margin-bottom: 10rem;
+}
+
 header {
-  /* position: fixed; */
-  position: absolute;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 header nav {
   display: flex;
-
-  height: 22rem;
-  /* background: #5f5f; */
+  height: 14rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -186,7 +188,7 @@ header nav {
 }
 
 .mobile-gnb li a:hover {
-  color: var(--color-foot);
+  color: var(--main-color2);
 }
 /* 모바일 메뉴 end */
 
@@ -195,38 +197,26 @@ header nav {
   padding: 11.8rem 0 11.8rem;
   margin-top: 20rem;
   background: var(--main-color);
+
+  text-transform: none; /* 자동 대문자 변환 방지 */
 }
 
-.foot-title {
+.footer-con {
   display: flex;
   align-items: center;
-  gap: 3.3rem;
+  gap: 5rem;
+  /* justify-content: space-between; */
 }
 
 .foot-logo a {
   display: block;
-  width: 9.5rem;
-  height: 8.7rem;
-  background: url(../img/foot-logo.png) no-repeat 100% / contain;
-}
-
-.foot-nav {
-  gap: 10rem;
-}
-
-.foot-nav li {
-  font-size: var(--font-md);
-  font-weight: var(--font-bold);
-  color: var(--Light-100);
-}
-
-.foot-nav {
-  display: flex;
+  width: 10rem;
+  height: 10rem;
+  background: url(../img/foot-logo.svg) no-repeat 100% / contain;
 }
 
 .foot-call {
   display: flex;
-  padding-top: 5rem;
   gap: 2rem;
 }
 .foot-call dl {
@@ -240,14 +230,14 @@ header nav {
 .foot-text dl dt {
   font-size: var(--font-xs);
   font-weight: var(--font-medium);
-  color: var(--color-foot);
+  color: var(--main-color2);
 }
 
 .foot-call dl dd,
 .foot-time dl dd {
   font-size: var(--font-xs);
   font-weight: var(--font-medium);
-  color: var(--Light-100);
+  color: var(--light-100);
 }
 
 .foot-time {
@@ -272,7 +262,7 @@ header nav {
 .foot-text p {
   display: flex;
   align-items: center;
-  color: var(--color-foot);
+  color: var(--main-color2);
   font-size: var(--font-xs);
 }
 
@@ -377,19 +367,17 @@ header nav {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1050px) {
+  header nav {
+    height: 10rem;
+  }
+
   .gnb {
     display: none;
   }
 
   .more-btn a {
     display: block;
-  }
-}
-
-@media (max-width: 900px) {
-  header nav {
-    height: 10rem;
   }
 
   .logo a {
@@ -420,5 +408,3 @@ header nav {
     width: 90%;
   }
 }
-
-/* 왜 안되는건데 */

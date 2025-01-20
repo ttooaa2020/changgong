@@ -11,9 +11,6 @@
 }
 
 /* education */
-.education {
-  margin: 30rem 0 30rem;
-}
 
 .education figure {
   width: 74.9rem;
@@ -64,7 +61,7 @@
   font-size: var(--font-sm);
   font-weight: var(--font-extrabold);
   font-size: var(--font-sm);
-  color: var(--Light-100);
+  color: var(--light-100);
   background: var(--main-color);
 
   width: 40.9999%;
@@ -79,8 +76,8 @@
 }
 
 .more:hover {
-  color: var(--Light-100);
-  background: var(--color-foot);
+  color: var(--light-100);
+  background: var(--main-color2);
 }
 
 /* contents */
@@ -113,7 +110,7 @@
   width: 48rem;
   height: 58.5rem;
 
-  background: var(--Light-100);
+  background: var(--light-100);
   padding: 5rem;
   border-radius: 3rem;
 }
@@ -161,54 +158,10 @@
   background: url(../img/con-all-3.svg) no-repeat 50% / contain;
 }
 
-/* map */
-.map {
-  margin-bottom: var(--section-spacing);
-}
-
-.map-con {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--color-gray-100);
-}
-
-.map-text {
-  font-size: var(--font-md);
-  font-weight: var(--font-regular);
-  padding: var(--padding-lg);
-}
-
-.map-title {
-  font-size: var(--font-xxl);
-  font-weight: var(--font-bold);
-}
-
-.map-text1 {
-  color: var(--color-gray-200);
-  padding: 2rem 0;
-}
-
-.map-wrap {
-  width: 80rem;
-}
-
 @media (max-width: 1600px) {
   .con-all li a {
     width: 40rem;
     height: 45rem;
-  }
-
-  .map-con {
-    flex-wrap: wrap;
-  }
-
-  .map-wrap {
-    width: 100%;
-  }
-
-  #daumRoughmapContainer1734592229954 {
-    width: 100% !important;
   }
 }
 

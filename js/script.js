@@ -134,14 +134,14 @@ $(function () {
   });
 
   const portfolio = new Swiper(".portfolio-all-1", {
-    speed: 5000,
+    speed: 2000,
     loop: true,
     slidesPerView: 4,
-    spaceBetween: 60,
+
     autoplay: "auto",
 
     autoplay: {
-      delay: 0,
+      delay: 2000,
     },
 
     breakpoints: {
@@ -154,20 +154,20 @@ $(function () {
       },
 
       1401: {
-        spaceBetween: 250,
+        spaceBetween: 20,
       },
     },
   });
 
   const portfolioAll = new Swiper(".portfolio-all-2", {
-    speed: 5000,
+    speed: 2000,
     loop: true,
     slidesPerView: 4,
-    spaceBetween: 10,
+
     autoplay: "auto",
 
     autoplay: {
-      delay: 0,
+      delay: 2000, // 슬라이드 간의 지연 시간
       reverseDirection: true, // 슬라이드 방향을 왼쪽으로 설정
     },
 
@@ -181,7 +181,7 @@ $(function () {
       },
 
       1401: {
-        spaceBetween: 250,
+        spaceBetween: 20,
       },
     },
   });

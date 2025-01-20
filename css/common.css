@@ -126,7 +126,7 @@ header nav {
   padding-right: 8rem;
 }
 
-.gnb li:nth-child(5) a {
+.gnb li:last-child a {
   padding-right: 0;
 }
 

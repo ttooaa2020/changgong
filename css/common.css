@@ -126,17 +126,6 @@ header nav {
   padding-right: 8rem;
 }
 
-.join-btn {
-  display: flex;
-  gap: 4rem;
-}
-
-.join-btn a {
-  display: block;
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
 .more-btn a {
   display: none;
   width: 2.5rem;

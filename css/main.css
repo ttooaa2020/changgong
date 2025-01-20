@@ -48,7 +48,7 @@
 .education-text p {
   font-size: var(--font-sm);
   font-weight: var(--font-regular);
-  color: var(--color-gray-300);
+  color: var(--color-gray-200);
 }
 
 .more {

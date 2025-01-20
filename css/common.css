@@ -120,7 +120,6 @@ header nav {
 .gnb li a {
   /* border: 1px solid #000; */
   display: block;
-  justify-content: space-between;
   font-weight: var(--font-semibold);
   font-size: var(--font-md);
   padding-right: 8rem;

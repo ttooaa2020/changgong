@@ -124,3 +124,23 @@
   font-size: var(--font-md);
   font-weight: var(--font-bold);
 }
+
+@media (max-width: 1600px) {
+  .portfolio-item {
+    width: 20rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio-item {
+    width: 5rem !important;
+  }
+
+  .price-all {
+    flex-direction: column;
+  }
+
+  .price-card li {
+    width: 100%;
+  }
+}

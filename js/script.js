@@ -44,6 +44,22 @@ $(function () {
       nextEl: ".swiper-button-next-1",
       prevEl: ".swiper-button-prev-1",
     },
+
+    breakpoints: {
+      100: {
+        slidesPerView: 1,
+      },
+
+      901: {
+        slidesPerView: 2,
+        spaceBetween: 76,
+      },
+
+      1401: {
+        slidesPerView: 3,
+        spaceBetween: 146,
+      },
+    },
   });
 
   const curriculumSwiper = new Swiper(".curriculum-swiper", {
@@ -58,6 +74,22 @@ $(function () {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+
+    breakpoints: {
+      100: {
+        slidesPerView: 1,
+      },
+
+      901: {
+        slidesPerView: 2,
+        spaceBetween: 76,
+      },
+
+      1401: {
+        slidesPerView: 4,
+        spaceBetween: 146,
+      },
     },
   });
 
@@ -97,18 +129,46 @@ $(function () {
     autoplay: {
       delay: 0,
     },
+
+    breakpoints: {
+      100: {
+        spaceBetween: 400,
+      },
+
+      901: {
+        spaceBetween: 400,
+      },
+
+      1401: {
+        spaceBetween: 250,
+      },
+    },
   });
 
   const portfolioAll = new Swiper(".portfolio-all-2", {
     speed: 5000,
     loop: true,
     slidesPerView: 4,
-    spaceBetween: 60,
+    spaceBetween: 10,
     autoplay: "auto",
 
     autoplay: {
       delay: 0,
       reverseDirection: true, // 슬라이드 방향을 왼쪽으로 설정
+    },
+
+    breakpoints: {
+      100: {
+        spaceBetween: 400,
+      },
+
+      901: {
+        spaceBetween: 400,
+      },
+
+      1401: {
+        spaceBetween: 250,
+      },
     },
   });
 

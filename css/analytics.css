@@ -36,7 +36,7 @@
   margin-top: 3.1579%;
   padding: 5.0658% 6.6447%;
 
-  font-size: var(--font-sm);
+  font-size: var(--font-xs);
   font-weight: var(--font-bold);
 }
 
@@ -67,4 +67,49 @@
 
 .app-list dl {
   display: flex;
+}
+
+@media (max-width: 1600px) {
+  .information-list {
+    width: 100%;
+  }
+
+  .information-list li {
+    gap: 2.3rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .information-list li::before {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .information-con {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information-list {
+    flex-wrap: wrap;
+    border-radius: 3rem;
+    gap: 4.5rem;
+  }
+
+  .information-list li {
+    width: 9.2rem;
+    height: 10.9rem;
+    gap: 1.5rem;
+    flex: 1 1 30%;
+  }
+}
+
+@media (max-width: 460px) {
+  .information-list {
+    margin-top: 2rem;
+    padding: 3rem;
+    gap: 3rem;
+  }
 }

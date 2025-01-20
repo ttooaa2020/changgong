@@ -148,3 +148,9 @@
     border-radius: 2rem;
   }
 }
+
+@media (max-width: 830px) {
+  .about-text {
+    padding-bottom: 2.5rem;
+  }
+}

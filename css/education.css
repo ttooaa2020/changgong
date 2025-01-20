@@ -219,3 +219,23 @@
 #footer {
   margin-top: 0;
 }
+
+@media (max-width: 1500px) {
+  .service-btn {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .service-btn {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .about-text {
+    padding-bottom: 2.5rem;
+  }
+}

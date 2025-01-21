@@ -162,6 +162,8 @@
   padding: 4.375% 0;
   /* background: #000; */
   background: url(../img/about-4.jpg) no-repeat 50% / cover;
+
+  margin-bottom: 0;
 }
 
 .sev-con {

@@ -106,10 +106,10 @@ h3 {
 
   align-items: center;
   flex-direction: column;
-  gap: 4.1rem;
+  gap: 2rem;
 
   font-weight: var(--font-semibold);
-  font-size: var(--font-xxl);
+  font-size: var(--font-lg);
 
   color: var(--main-darck);
 
@@ -119,8 +119,8 @@ h3 {
 .intor-list li::before {
   content: "";
   display: block;
-  width: 14.9rem;
-  width: 64.2241%;
+  width: 10rem;
+
   /* aspect-ratio: 1/1; */
 
   height: 14.9rem;

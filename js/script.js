@@ -134,14 +134,14 @@ $(function () {
   });
 
   const portfolio = new Swiper(".portfolio-all-1", {
-    speed: 2000,
+    speed: 5000,
     loop: true,
     slidesPerView: 4,
-
+    centeredSlides: true, // 중앙 정렬
     autoplay: "auto",
 
     autoplay: {
-      delay: 2000,
+      delay: 0, // 슬라이드 간의 지연 시간을 0으로 설정 (즉시 전환)
     },
 
     breakpoints: {
@@ -160,14 +160,14 @@ $(function () {
   });
 
   const portfolioAll = new Swiper(".portfolio-all-2", {
-    speed: 2000,
+    speed: 5000,
     loop: true,
     slidesPerView: 4,
-
+    centeredSlides: true, // 중앙 정렬
     autoplay: "auto",
 
     autoplay: {
-      delay: 2000, // 슬라이드 간의 지연 시간
+      delay: 0, // 슬라이드 간의 지연 시간
       reverseDirection: true, // 슬라이드 방향을 왼쪽으로 설정
     },
 

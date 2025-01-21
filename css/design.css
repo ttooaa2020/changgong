@@ -16,8 +16,11 @@
   pointer-events: none;
 }
 
-.portfolio-wrapper {
+/* .swiper-wrapper {
   transition-timing-function: linear;
+} */
+
+.portfolio-wrapper {
   align-items: center;
   padding: 2.4rem;
 }

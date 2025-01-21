@@ -14,11 +14,11 @@
 .about-con li {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 10rem;
+  padding-bottom: 30rem;
   align-items: center;
   gap: 8%;
 
- 
+  padding-bottom: 19.7368%;
 }
 
 .about-con li:nth-child(4) {
@@ -96,10 +96,6 @@
 }
 
 /* curriculum 섹션 스타일 */
-.curriculum {
-  padding: 15rem 0 20rem;
-  position: relative;
-}
 
 .curriculum-con {
   justify-content: space-between;
@@ -208,6 +204,12 @@
   font-size: var(--font-lg);
 }
 /* 고객센터 */
+
+.lecture-all {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
 
 #footer {
   margin-top: 0;

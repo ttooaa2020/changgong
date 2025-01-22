@@ -122,22 +122,32 @@
   font-weight: var(--font-bold);
 }
 
-@media (max-width: 1600px) {
-  .portfolio-item {
-    width: 20rem !important;
+@media (max-width: 1700px) {
+  .portfolio-item figure {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .portfolio-item figure {
+    width: 25rem;
+    height: 15rem;
   }
 }
 
 @media (max-width: 1200px) {
-  .portfolio-item {
-    width: 5rem !important;
-  }
-
   .price-all {
     flex-direction: column;
   }
 
   .price-card li {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .price-card li {
+    padding: 3rem;
   }
 }

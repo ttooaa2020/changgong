@@ -133,11 +133,11 @@ $(function () {
 
     breakpoints: {
       100: {
-        spaceBetween: 400,
+        spaceBetween: 280,
       },
 
       901: {
-        spaceBetween: 400,
+        spaceBetween: 200,
       },
 
       1301: {
@@ -156,11 +156,11 @@ $(function () {
 
     breakpoints: {
       100: {
-        spaceBetween: 400,
+        spaceBetween: 280,
       },
 
       901: {
-        spaceBetween: 400,
+        spaceBetween: 200,
       },
 
       1301: {

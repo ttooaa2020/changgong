@@ -83,8 +83,14 @@
 }
 
 .keyword {
-  padding: 22.7rem 0 0;
   position: relative;
+  padding: 5rem;
+  background: var(--main-color);
+  color: var(--main-color2);
+}
+
+.keyword h3 {
+  color: var(--light-100);
 }
 
 .keyword-con {
@@ -92,7 +98,7 @@
 }
 
 .keyword-wrapper {
-  padding-top: 9.9rem;
+  padding-top: 2rem;
 }
 
 /* curriculum 섹션 스타일 */
@@ -102,7 +108,7 @@
 }
 
 .curriculum-wrapper {
-  padding-top: 9.9rem;
+  padding-top: 2rem;
 }
 
 /* 공통 스타일 */
@@ -126,11 +132,23 @@
 }
 
 .keyword .swiper-button-prev-1 {
-  top: 70%;
+  display: flex;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  top: 50%;
+  background: var(--light-100);
 }
 
 .keyword .swiper-button-next-1 {
-  top: 70%;
+  display: flex;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  top: 50%;
+  background: var(--light-100);
 }
 
 .swiper-pagination {

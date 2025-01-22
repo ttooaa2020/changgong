@@ -16,13 +16,11 @@
   pointer-events: none;
 }
 
-/* .swiper-wrapper {
-  transition-timing-function: linear;
-} */
-
 .portfolio-wrapper {
   align-items: center;
   padding: 2.4rem;
+
+  pointer-events: auto; /* 이벤트를 수신할 수 있도록 설정 */
 }
 
 .portfolio-all-2 {

@@ -199,6 +199,8 @@ header nav {
   background: var(--main-color);
 
   text-transform: none; /* 자동 대문자 변환 방지 */
+
+  padding: 7.7632% 0 7.7632%;
 }
 
 .footer-con {
@@ -296,9 +298,9 @@ header nav {
 .swiper-button-prev-1::after {
   content: "";
   display: block;
-  width: 4.2rem;
-  height: 4.2rem;
-  background: url(../img/arrow.svg) no-repeat 50% / contain;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(../img/arrow.svg) no-repeat 100% / contain;
 }
 
 .swiper-button-next-1 {
@@ -315,9 +317,9 @@ header nav {
 .swiper-button-next-1::after {
   content: "";
   display: block;
-  width: 4.2rem;
-  height: 4.2rem;
-  background: url(../img/arrow.svg) no-repeat 50% / contain;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(../img/arrow.svg) no-repeat 100% / contain;
 }
 
 .swiper-pagination {
@@ -344,14 +346,10 @@ header nav {
 
 /*  */
 @media (max-width: 1500px) {
-  .foot-title {
-    flex-wrap: wrap;
-  }
-
   .foot-text {
-    gap: 2rem;
-
     flex-wrap: wrap;
+
+    gap: 2rem;
   }
 }
 
@@ -403,7 +401,18 @@ header nav {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 690px) {
+  .footer-con {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .foot-call {
+    padding-top: 0rem;
+  }
+}
+
+@media (max-width: 600px) {
   .inner {
     width: 90%;
   }

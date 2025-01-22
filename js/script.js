@@ -47,12 +47,6 @@ $(function () {
     speed: 1000, //기본값 300 = 0.3초
     spaceBetween: 70,
 
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next-1",
@@ -134,15 +128,8 @@ $(function () {
   });
 
   const portfolio = new Swiper(".portfolio-all-1", {
-    speed: 5000,
     loop: true,
     slidesPerView: 4,
-    centeredSlides: true, // 중앙 정렬
-    autoplay: "auto",
-
-    autoplay: {
-      delay: 0, // 슬라이드 간의 지연 시간을 0으로 설정 (즉시 전환)
-    },
 
     breakpoints: {
       100: {
@@ -153,23 +140,19 @@ $(function () {
         spaceBetween: 400,
       },
 
-      1401: {
+      1301: {
+        spaceBetween: 250,
+      },
+
+      1920: {
         spaceBetween: 20,
       },
     },
   });
 
   const portfolioAll = new Swiper(".portfolio-all-2", {
-    speed: 5000,
     loop: true,
     slidesPerView: 4,
-    centeredSlides: true, // 중앙 정렬
-    autoplay: "auto",
-
-    autoplay: {
-      delay: 0, // 슬라이드 간의 지연 시간
-      reverseDirection: true, // 슬라이드 방향을 왼쪽으로 설정
-    },
 
     breakpoints: {
       100: {
@@ -180,7 +163,11 @@ $(function () {
         spaceBetween: 400,
       },
 
-      1401: {
+      1301: {
+        spaceBetween: 250,
+      },
+
+      1920: {
         spaceBetween: 20,
       },
     },

@@ -91,6 +91,7 @@
 }
 
 .price-card-title dd {
+  font-size: var(--font-xs);
   font-weight: var(--font-regular);
 }
 

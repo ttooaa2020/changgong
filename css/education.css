@@ -84,9 +84,9 @@
 
 .keyword {
   position: relative;
-  padding: 5rem;
   background: var(--main-color);
   color: var(--main-color2);
+  padding: 5rem 0;
 }
 
 .keyword h3 {
@@ -112,8 +112,12 @@
 }
 
 /* 공통 스타일 */
+
+.swiper {
+  height: 20rem;
+}
+
 .swiper-slide {
-  /* width: 20rem !important; */
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -247,8 +251,38 @@
   }
 }
 
+@media (max-width: 900px) {
+  .keyword .swiper-button-next-1 {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .swiper-button-next-1::after {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .keyword .swiper-button-prev-1 {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .swiper-button-prev-1::after {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 @media (max-width: 830px) {
   .about-text {
     padding-bottom: 2.5rem;
+  }
+
+  .keyword .swiper-button-next-1 {
+    right: 5%;
+  }
+
+  .keyword .swiper-button-prev-1 {
+    left: 5%;
   }
 }

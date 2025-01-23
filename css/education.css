@@ -163,6 +163,85 @@
 }
 /* 고객센터 */
 
+/* 쇼츠 */
+/* time */
+.time {
+  padding-top: 29.3rem;
+
+  padding-top: 15.2604%;
+}
+
+.time-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 7.8rem;
+
+  padding-top: 5.1316%;
+}
+
+.time-list li {
+  position: relative;
+  max-width: 34rem;
+  /* height: 29.7rem; */
+  height: auto;
+  aspect-ratio: 34 / 29.7;
+  border: 5px solid var(--main-color);
+  border-radius: 4rem;
+  padding: 3.4rem;
+
+  width: 22.3684%;
+  padding: 2.2368%;
+
+  font-weight: var(--font-bold);
+  font-size: var(--font-lg);
+  color: var(--main-color);
+}
+
+.time-list li::after {
+  content: "";
+  position: absolute;
+
+  right: 3.4rem;
+  bottom: 3.4rem;
+
+  right: 10.5%;
+  bottom: 12%;
+}
+
+/* 339 */
+
+.time-list li:nth-child(1)::after {
+  width: 4.1rem;
+  height: 7.4rem;
+
+  width: 12.0944%;
+  background: url(../img/time-list1.svg) no-repeat 50% / contain;
+}
+.time-list li:nth-child(2)::after {
+  width: 7.4rem;
+  height: 7.4rem;
+
+  width: 21.8289%;
+  background: url(../img/time-list2.svg) no-repeat 50% / contain;
+}
+.time-list li:nth-child(3)::after {
+  width: 7.4rem;
+  height: 7.4rem;
+
+  width: 21.8289%;
+  background: url(../img/time-list3.svg) no-repeat 50% / contain;
+}
+.time-list li:nth-child(4)::after {
+  width: 7.7rem;
+  height: 6.1rem;
+
+  width: 22.7139%;
+  background: url(../img/time-list4.svg) no-repeat 50% / contain;
+}
+/* time end */
+/* 쇼츠 */
+
 .lecture-all {
   display: flex;
   flex-direction: column;
@@ -188,6 +267,37 @@
 
   .swiper {
     height: 20rem;
+  }
+
+  .time-list li {
+    border: 4px solid;
+    border-radius: 2.4rem;
+  }
+
+  .time-list li::after {
+    bottom: 3%;
+  }
+}
+
+@media (max-width: 970px) {
+  .time {
+    padding-top: 14.8rem;
+  }
+
+  .time-list {
+    padding-top: 4.3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .time-list li {
+    padding: 1.8rem 2.2rem;
+    width: calc(50% - 1rem); /* 2개씩 줄바꿈을 위해 너비 조정 및 간격 고려 */
+    margin-bottom: 1rem; /* 아래쪽 간격 추가 */
+  }
+
+  .time-list li::after {
+    bottom: 15%;
   }
 }
 
@@ -224,5 +334,16 @@
 
   .keyword .swiper-button-prev-1 {
     left: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .time-list li {
+    width: 18.5rem;
+    height: 16.1rem;
+  }
+
+  .time-list li::after {
+    bottom: 0.5rem;
   }
 }

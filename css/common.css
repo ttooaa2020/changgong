@@ -16,7 +16,7 @@
   --font-lg: clamp(2rem, 1.666vw, 3.2rem);
   --font-md: clamp(1.6rem, 1.042vw, 2rem);
   --font-sm: clamp(1.5rem, 1.25vw, 2.4rem);
-  --font-xs: clamp(1.3rem, 0.8333vw, 1.6rem);
+  --font-xs: clamp(1rem, 0.8333vw, 1.6rem);
 
   --font-light: 300;
   --font-regular: 400;

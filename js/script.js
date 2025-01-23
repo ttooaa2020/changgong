@@ -1,4 +1,83 @@
 $(function () {
+  const $window = $(window);
+  const $header = $("header");
+  const $menu = $(".gnb>li");
+  const $submenu = $(".submenu");
+
+  const duration1 = 300;
+  const duration2 = 200;
+
+  // 서브 메뉴
+  $menu.on("click", function (e) {
+    e.stopPropagation();
+
+    const $this = $(this);
+    const hasSubmenu = $this.find($submenu).length > 0;
+
+    if (hasSubmenu) {
+      $this.toggleClass("on");
+      $header.toggleClass("active");
+
+      if ($this.hasClass("on")) {
+        $submenu.stop().slideDown(duration1);
+      } else {
+        $submenu.stop().slideUp(duration2);
+      }
+    } else {
+      // 서브메뉴가 없는 경우 링크로 이동
+      const link = $this.find("a").attr("href");
+      if (link) {
+        window.location.href = link;
+      }
+    }
+  });
+  // 헤더 서브메뉴
+
+  // 모바일 서브 메뉴
+  const $mobileMenu = $(".mobile-gnb>li");
+  const $mobileSubmenu = $(".mobile-submenu");
+
+  $mobileMenu.on("click", function (e) {
+    e.stopPropagation();
+
+    const $this = $(this);
+    const $submenu = $this.find($mobileSubmenu);
+
+    if ($submenu.length > 0) {
+      $this.toggleClass("on");
+
+      if ($this.hasClass("on")) {
+        $submenu.stop().slideDown(duration1);
+      } else {
+        $submenu.stop().slideUp(duration2);
+      }
+    } else {
+      // 서브메뉴가 없는 경우 링크로 이동
+      const link = $this.find("a").attr("href");
+      if (link) {
+        window.location.href = link;
+      }
+    }
+  });
+
+  // 모바일 메뉴 닫기 버튼 클릭 시 메뉴 닫기
+  $(".mobile-btn-close").on("click", function () {
+    $(".mobile-menu").removeClass("active");
+  });
+  // 모바일 서브 메뉴
+
+  // 문서의 다른 부분을 클릭했을 때
+  $(document).on("click", function () {
+    $menu.removeClass("on"); // 클래스 제거
+    $header.removeClass("active"); // 헤더 클래스 제거
+    $submenu.stop().slideUp(duration2); // 서브메뉴 숨기기
+
+    $mobileMenu.removeClass("on"); // 모든 메뉴에서 'on' 클래스 제거
+    $mobileSubmenu.stop().slideUp(duration1); // 모든 서브 메뉴 닫기
+  });
+
+  // 서브 메뉴
+
   // 모바일 더보기
   const btnMenu = document.querySelector(".more-btn");
   const mobileMenu = document.querySelector(".mobile-menu");

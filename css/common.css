@@ -119,15 +119,19 @@ header nav {
   align-items: center;
 }
 
+.gnb > li {
+  position: relative;
+}
+
 .gnb li a {
-  /* border: 1px solid #000; */
   display: block;
   font-weight: var(--font-semibold);
   font-size: var(--font-md);
-  padding-right: 8rem;
+
+  padding: 0 5rem;
 }
 
-.gnb li:last-child a {
+.gnb > li:last-child a {
   padding-right: 0;
 }
 
@@ -137,6 +141,35 @@ header nav {
   height: 0.9rem;
   background: url(../img/more-btn.svg) no-repeat 100% / contain;
 }
+/* 헤더 */
+
+/* 서브 메뉴 */
+.submenu {
+  position: absolute;
+  top: 8.5rem;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  display: none;
+  padding-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.submenu li a {
+  display: block;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-weight: var(--font-bold);
+  font-size: var(--font-);
+
+  color: var(--dark-60);
+}
+
+.submenu li:hover i {
+  color: var(--main-color);
+}
+/* 서브 메뉴 */
 
 /* 모바일 메뉴 */
 .mobile-menu.active {
@@ -155,6 +188,7 @@ header nav {
 
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   padding-top: 8rem;
 
@@ -190,6 +224,15 @@ header nav {
 .mobile-gnb li a:hover {
   color: var(--main-color2);
 }
+
+.mobile-submenu {
+  display: none;
+}
+
+.mobile-submenu li a {
+  font-weight: var(--font-regular);
+  font-size: var(--font-lg);
+}
 /* 모바일 메뉴 end */
 
 /* footer */
@@ -198,7 +241,7 @@ header nav {
   margin-top: 20rem;
   background: var(--main-color);
 
-  text-transform: none; /* 자동 대문자 변환 방지 */
+  text-transform: none;
 
   padding: 7.7632% 0 7.7632%;
 }
@@ -207,7 +250,6 @@ header nav {
   display: flex;
   align-items: center;
   gap: 5rem;
-  /* justify-content: space-between; */
 }
 
 .foot-logo a {
@@ -345,6 +387,17 @@ header nav {
 }
 
 /*  */
+
+@media (max-width: 1550px) {
+  .gnb li a {
+    padding: 0 3.5rem;
+  }
+
+  .submenu li a {
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 1500px) {
   .foot-text {
     flex-wrap: wrap;
@@ -355,17 +408,25 @@ header nav {
 
 @media (max-width: 1350px) {
   .gnb li a {
-    padding-right: 6rem;
+    padding: 0 2rem;
+  }
+
+  .submenu li a {
+    padding: 2rem;
   }
 }
 
 @media (max-width: 1200px) {
   .gnb li a {
-    padding-right: 4rem;
+    padding: 0 2rem;
+  }
+
+  .submenu li a {
+    padding: 2rem;
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1130px) {
   header nav {
     height: 10rem;
   }

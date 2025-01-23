@@ -208,19 +208,18 @@ $(function () {
 
   const portfolio = new Swiper(".portfolio-all-1", {
     loop: true,
-    slidesPerView: 4,
 
     breakpoints: {
       100: {
-        spaceBetween: 280,
+        spaceBetween: 60,
       },
 
       901: {
-        spaceBetween: 200,
+        spaceBetween: 50,
       },
 
       1301: {
-        spaceBetween: 250,
+        spaceBetween: 40,
       },
 
       1920: {
@@ -231,19 +230,18 @@ $(function () {
 
   const portfolioAll = new Swiper(".portfolio-all-2", {
     loop: true,
-    slidesPerView: 4,
 
     breakpoints: {
       100: {
-        spaceBetween: 280,
+        spaceBetween: 60,
       },
 
       901: {
-        spaceBetween: 200,
+        spaceBetween: 50,
       },
 
       1301: {
-        spaceBetween: 250,
+        spaceBetween: 40,
       },
 
       1920: {

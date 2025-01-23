@@ -28,11 +28,16 @@
   padding-top: 0.5208%;
 }
 
-.portfolio-item figure {
-  width: 40rem;
-  height: 25rem;
+.portfolio-item {
+  width: 40rem !important;
+  height: 25rem !important;
   position: relative;
   border-radius: 2.4rem;
+}
+
+.portfolio-item figure {
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio-item img {
@@ -122,20 +127,6 @@
   font-weight: var(--font-bold);
 }
 
-@media (max-width: 1700px) {
-  .portfolio-item figure {
-    width: 30rem;
-    height: 20rem;
-  }
-}
-
-@media (max-width: 1300px) {
-  .portfolio-item figure {
-    width: 25rem;
-    height: 15rem;
-  }
-}
-
 @media (max-width: 1200px) {
   .price-all {
     flex-direction: column;
@@ -149,5 +140,11 @@
 @media (max-width: 600px) {
   .price-card li {
     padding: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .price-card li {
+    padding: 2.5rem;
   }
 }

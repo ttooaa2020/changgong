@@ -180,7 +180,7 @@ header nav {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 70%;
+  width: 80%;
   height: 100vh;
   background: var(--main-color);
   color: #fff;

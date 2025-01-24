@@ -249,6 +249,15 @@
   border-radius: 3em;
 }
 
+.shorts-keyword h3 {
+  color: var(--color-black);
+}
+
+.shorts-keyword {
+  background: #fff;
+  color: var(--color-black);
+  height: 40rem;
+}
 /* 쇼츠 */
 
 .lecture-all {

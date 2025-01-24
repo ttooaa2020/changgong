@@ -211,10 +211,12 @@ $(function () {
 
     breakpoints: {
       100: {
+        slidesPerView: 1,
         spaceBetween: 60,
       },
 
       901: {
+        slidesPerView: 3,
         spaceBetween: 50,
       },
 
@@ -223,6 +225,7 @@ $(function () {
       },
 
       1920: {
+        slidesPerView: 4,
         spaceBetween: 20,
       },
     },
@@ -233,10 +236,12 @@ $(function () {
 
     breakpoints: {
       100: {
+        slidesPerView: 1,
         spaceBetween: 60,
       },
 
       901: {
+        slidesPerView: 3,
         spaceBetween: 50,
       },
 
@@ -245,6 +250,7 @@ $(function () {
       },
 
       1920: {
+        slidesPerView: 4,
         spaceBetween: 20,
       },
     },
@@ -282,4 +288,73 @@ $(function () {
   });
 
   // question end------------------------------------------------------------
+
+  // phone-con------------------------------------------------------------
+  const swiperContainer = document.querySelector(".phone-con");
+  // 스와이퍼
+  if (swiperContainer) {
+    const swiper = new Swiper(".phone-con", {
+      // Optional parameters
+      initialSlide: 0,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+      loop: true,
+      speed: 300,
+      effect: "fade",
+      allowTouchMove: true, //드래그 하듯 넘길수 있도록
+      grabCursor: true, //마우서 커서 변경 되도록
+
+      // Pagination 추가
+      pagination: {
+        el: ".phone-pagination",
+        clickable: true,
+      },
+      on: {
+        init: function () {
+          updateCardText(this.realIndex);
+        },
+        slideChange: function () {
+          updateCardText(this.realIndex);
+        },
+      },
+    });
+    // 스와이퍼 end
+
+    // Intersection Observer 설정 (보일때 작동)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            swiper.autoplay.start();
+          } else {
+            swiper.autoplay.stop();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    ); // 50% 이상 보일 때 감지
+
+    // Swiper 컨테이너 관찰 시작 (폰과 텍스트 연동)
+    observer.observe(swiperContainer);
+    function updateCardText(index) {
+      const cardTexts = document.querySelectorAll(".text-con");
+      cardTexts.forEach((cardText, i) => {
+        if (i === index) {
+          cardText.classList.add("on");
+        } else {
+          cardText.classList.remove("on");
+        }
+      });
+    }
+
+    // 페이지 로드 시 첫 번째 요소 활성화
+    document.addEventListener("DOMContentLoaded", () => {
+      updateCardText(0);
+    });
+  }
+
+  // phone-con end------------------------------------------------------------
 });

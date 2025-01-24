@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.about-con li dl::before {
+  display: none;
+}
+
 .portfolio-title h3 {
   padding-bottom: 5rem;
 }

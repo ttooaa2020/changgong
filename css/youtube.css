@@ -16,6 +16,12 @@
   width: 44.4444%;
 }
 
+.swiper-slide figure {
+  overflow: hidden;
+  height: 70rem;
+  border-radius: 3rem;
+}
+
 .swiper-slide figure img {
   width: 100%;
   height: 100%;
@@ -46,3 +52,43 @@
   display: none;
 }
 /* phone end */
+
+@media (max-width: 1300px) {
+  .phone-all {
+    width: 64.3rem;
+    height: 57.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .phone-all {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .phone-con {
+    position: relative;
+    width: 19.2rem;
+    height: 40rem;
+  }
+
+  .swiper-slide figure {
+    height: 35rem;
+    border-radius: 3rem;
+  }
+
+  .text-con {
+    display: none;
+    text-align: center;
+  }
+
+  .text-con.on {
+    display: block;
+  }
+
+  .phone-pagination {
+    display: block;
+    position: absolute;
+    bottom: 0rem !important;
+  }
+}
